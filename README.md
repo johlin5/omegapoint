@@ -1,4 +1,4 @@
-# Omegapoint programing challange
+# Omegapoint programming challange
 
 The point of this assignment is to validate swedish personal identification numbers, ordination numbers and organization id's.
 
