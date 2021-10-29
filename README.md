@@ -6,10 +6,9 @@ The point of this assignment is to validate swedish personal identification numb
 
 Go to source folder and type
 
-```
-yarn
-yarn test [ID]
-```
+`yarn`
+
+`yarn test [ID]`
 
 ### Example:
 
