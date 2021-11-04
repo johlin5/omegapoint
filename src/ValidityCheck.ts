@@ -5,7 +5,6 @@ import {
   isValidOrganisationNumberRegexTest,
 } from "./regex";
 import { luhnAlgorithm } from "./luhnAlgorithm";
-import readline from "readline";
 
 export const ValidityCheckForId = (id: string): boolean => {
   // 1: Check regex for personal ID
@@ -35,25 +34,3 @@ export const ValidityCheckForId = (id: string): boolean => {
   }
   return false;
 };
-
-const readFromInput = () => {
-  const rl = readline.createInterface({
-    input: process.stdin,
-  });
-
-  let input = "";
-
-  rl.on("line", (line) => {
-    input = line;
-  });
-
-  rl.on("close", () => {
-    console.log(
-      `The id ${input} is ${
-        ValidityCheckForId(input) ? "a valid id" : "not a valid id"
-      }`
-    );
-  });
-};
-
-readFromInput();

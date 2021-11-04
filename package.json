@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest src/tests/ValidityCheck.test.ts",
-    "try": "ts-node src/ValidityCheck.ts <<<"
+    "try": "ts-node src/io/readLine.ts <<<"
   },
   "devDependencies": {
     "@babel/cli": "^7.15.7",

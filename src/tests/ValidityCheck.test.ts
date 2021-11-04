@@ -1,4 +1,4 @@
-import { ValidityCheckForPersonalId } from "../ValidityCheck";
+import { ValidityCheckForId } from "../ValidityCheck";
 
 describe("Test valid and invalid personal numbers", () => {
   const validPersonalNumbers = [
@@ -27,23 +27,23 @@ describe("Test valid and invalid personal numbers", () => {
   ];
   validPersonalNumbers.map((id) => {
     it(`Should pass valid personal number ${id}`, () => {
-      expect(ValidityCheckForPersonalId(id)).toBe(true);
+      expect(ValidityCheckForId(id)).toBe(true);
     });
   });
 
   invalidPersonalNumbers.map((id) => {
     it(`Should fail invalid personal number ${id}`, () => {
-      expect(ValidityCheckForPersonalId(id)).toBe(false);
+      expect(ValidityCheckForId(id)).toBe(false);
     });
   });
   validOrdinationNumbers.map((id) => {
     it(`Should pass valid ordination number ${id}`, () => {
-      expect(ValidityCheckForPersonalId(id)).toBe(true);
+      expect(ValidityCheckForId(id)).toBe(true);
     });
   });
   validOrganizationNumbers.map((id) => {
     it(`Should pass valid organisationNumber number ${id}`, () => {
-      expect(ValidityCheckForPersonalId(id)).toBe(true);
+      expect(ValidityCheckForId(id)).toBe(true);
     });
   });
 });
