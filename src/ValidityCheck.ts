@@ -7,7 +7,7 @@ import {
 import { luhnAlgorithm } from "./luhnAlgorithm";
 import readline from "readline";
 
-export const ValidityCheckForPersonalId = (id: string): boolean => {
+export const ValidityCheckForId = (id: string): boolean => {
   // 1: Check regex for personal ID
   // 2: Validate correct date
   // 3: Validate checksum with lunn algorithm
@@ -50,7 +50,7 @@ const readFromInput = () => {
   rl.on("close", () => {
     console.log(
       `The id ${input} is ${
-        ValidityCheckForPersonalId(input) ? "a valid id" : "not a valid id"
+        ValidityCheckForId(input) ? "a valid id" : "not a valid id"
       }`
     );
   });
